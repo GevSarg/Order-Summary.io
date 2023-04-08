@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500&family=Montserrat:wght@500&family=Red+Hat+Display:wght@500&family=Schibsted+Grotesk&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display";
+}
+body {
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  min-height: auto;
+  background-color: white;
+  border-radius: 15px;
+}
+.card-background img {
+  width: 100%;
+}
+.card-info {
+  text-align: center;
+  padding: 30px 45px;
+}
+.title {
+  text-transform: capitalize;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 26px;
+}
+.desc {
+  margin: 20px 0;
+  color: hsl(224, 23%, 55%);
+}
+.card-buy {
+  padding: 20px 15px;
+  border-radius: 15px;
+  width: 100%;
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-music {
+  display: flex;
+  flex-direction: row;
+}
+.card-music p {
+  margin-left: 20px;
+}
+.card-plan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.plan-name {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  font-size: 16px;
+}
+.plan-price {
+  color: hsl(224, 23%, 55%);
+  font-size: 15px;
+}
+.change {
+  text-decoration: underline;
+  color: #382ae1;
+  font-weight: 900;
+  font-size: 15px;
+  border: none;
+}
+.change:hover {
+  color: #766cf1;
+  text-decoration: none;
+  cursor: pointer;
+}
+.buy {
+  background-color: #382ae1;
+  color: white;
+  border: none;
+  margin: 30px 0;
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 900;
+}
+.buy:hover {
+  background-color: #766cf1;
+  cursor: pointer;
+}
+.cancel {
+  border: none;
+  color: hsl(224, 23%, 55%);
+  background-color: transparent;
+  font-weight: 900;
+}
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}
+@media (max-width: 450px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+    background-size: cover;
+  }
+  .card {
+    width: 90%;
+  }
+  .card-plan p {
+    font-size: 15px;
+  }
+  .change {
+    font-size: 14px;
+  }
+  .card-info {
+    padding: 30px 25px;
+  }
+}
